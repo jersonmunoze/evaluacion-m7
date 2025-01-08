@@ -1,4 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
+    //Se amplió la validación a 20
     const Bootcamp = sequelize.define('bootcamps', {
         title: {
             type: DataTypes.STRING,
@@ -8,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
-                // min: 5,
-                // max: 10
+                min: 5,
+                max: 20
             }
         },
         description: {
