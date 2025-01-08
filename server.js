@@ -40,7 +40,7 @@ const main = async () => {
 
         //--------------------- Consultas --------------------------
         //Consulta bootcamp por id incluyendo los usuarios
-        console.log('***************************** Consulta todos los bootcamps con sus usuarios *****************************');
+        console.log('***************************** Consulta bootcamp por id con sus usuarios *****************************');
 
         const bootcampIdUno = await bootcampController.findById(1);
         console.log(JSON.stringify(bootcampIdUno, null, 2));
